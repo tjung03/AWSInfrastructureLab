@@ -8,7 +8,7 @@
       .title{font:700 27px system-ui,sans-serif;fill:#f8fafc}.sub{font:15px system-ui,sans-serif;fill:#cbd5e1}
       .name{font:700 20px system-ui,sans-serif;fill:#f8fafc}.detail{font:15px system-ui,sans-serif;fill:#cbd5e1}
       .outside{fill:#1e293b;stroke:#94a3b8;stroke-width:2}.gateway{fill:#1e3a8a;stroke:#93c5fd;stroke-width:2}.vpc{fill:#172554;stroke:#818cf8;stroke-width:2}.public{fill:#1e293b;stroke:#60a5fa;stroke-width:2}.private{fill:#1e293b;stroke:#a5b4fc;stroke-width:2}.resource{fill:#0f172a;stroke:#64748b;stroke-width:1.5}
-      .line{fill:none;stroke:#93c5fd;stroke-width:2.5;marker-end:url(#arrow)}.natline{fill:none;stroke:#a5b4fc;stroke-width:2.5;marker-end:url(#arrow)}.tag{font:14px system-ui,sans-serif;fill:#bfdbfe}
+      .line{fill:none;stroke:#93c5fd;stroke-width:2.5;marker-end:url(#arrow)}.bi{fill:none;stroke:#93c5fd;stroke-width:2.5}.natline{fill:none;stroke:#a5b4fc;stroke-width:2.5;marker-end:url(#arrow)}.tag{font:14px system-ui,sans-serif;fill:#bfdbfe}
     </style>
   </defs>
   <rect width="1180" height="530" rx="22" fill="url(#bg)"/>
@@ -20,7 +20,7 @@
   <rect x="234" y="231" width="170" height="90" rx="16" class="gateway"/>
   <text x="253" y="271" class="name">IGW</text>
   <text x="253" y="299" class="detail">Internet gateway</text>
-  <path d="M188 276 H224" class="line"/>
+  <path d="M188 276 H234" class="bi"/>
   <rect x="447" y="111" width="695" height="362" rx="20" class="vpc"/>
   <text x="471" y="147" class="name">VPC · 10.20.0.0/16</text>
   <rect x="472" y="168" width="643" height="126" rx="16" class="public"/>
@@ -37,6 +37,6 @@
   <text x="509" y="415" class="detail">EC2 · no public IPv4</text>
   <path d="M767 409 H934 V291" class="natline"/>
   <text x="785" y="395" class="tag">Outbound only</text>
-  <path d="M447 261 H414" class="line"/>
+  <path d="M447 261 H404" class="bi"/>
   <text x="44" y="495" class="sub">Public EC2 ingress needs a public address and access rules. NAT does not provide direct inbound access to private EC2.</text>
 </svg>
